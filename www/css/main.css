@@ -1,229 +1,276 @@
-body
-{
-	margin: 0;
-	padding: 0;
-	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #2A64B9;
 }
 
-#page
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
-}
-
-#header
-{
-	margin: 0;
-	padding: 0;
-	border-top: 3px solid #C9E0ED;
-}
-
-#content
-{
-    padding: 20px;
-}
-
-#sidebar
-{
-	padding: 20px 20px 20px 0;
-}
-
-#footer
-{
-	padding: 10px;
-	margin: 10px 20px;
-	font-size: 0.8em;
-	text-align: center;
-	border-top: 1px solid #C9E0ED;
-}
-
-#logo
-{
-	padding: 10px 20px;
-	font-size: 200%;
-}
-
-#mainmenu
-{
-	background:white url(bg.gif) repeat-x left top;
-}
-
-#mainmenu ul
-{
-	padding:6px 20px 5px 20px;
-	margin:0px;
-}
-
-#mainmenu ul li
-{
-	display: inline;
-}
-
-#mainmenu ul li a
-{
-	color:#ffffff;
-	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
-	text-decoration:none;
-	padding:5px 8px;
-}
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-{
-	color: #6399cd;
-	background-color:#EFF4FA;
-	text-decoration:none;
-}
-
-div.flash-error, div.flash-notice, div.flash-success
-{
-	padding:.8em;
-	margin-bottom:1em;
-	border:2px solid #ddd;
-}
-
-div.flash-error
-{
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4;
-}
-
-div.flash-notice
-{
-	background:#FFF6BF;
-	color:#514721;
-	border-color:#FFD324;
-}
-
-div.flash-success
-{
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880;
-}
-
-div.flash-error a
-{
-	color:#8a1f11;
-}
-
-div.flash-notice a
-{
-	color:#514721;
-}
-
-div.flash-success a
-{
-	color:#264409;
-}
-
-div.form .rememberMe label
-{
-	display: inline;
-}
-
-div.view
-{
-	padding: 10px;
-	margin: 10px 0;
-	border: 1px solid #C9E0ED;
-}
-
-div.breadcrumbs
-{
-	font-size: 0.9em;
-	padding: 5px 20px;
-}
-
-div.breadcrumbs span
-{
-	font-weight: bold;
-}
-
-div.search-form
-{
-	padding: 10px;
-	margin: 10px 0;
-	background: #eee;
-}
-
-.portlet
-{
+.myimg  {    
+  width: auto;
+  height: 130px;
 
 }
-
-.portlet-decoration
-{
-	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
+.clear {
+    width: 100%;
+}
+/*
+.ddd {
+    border-radius: 30px;
+    margin: 50px;
+    
 }
 
-.portlet-title
-{
-	font-size: 12px;
-	font-weight: bold;
-	padding: 0;
-	margin: 0;
-	color: #298dcd;
+.ddd2 {
+    height: 200px;
+    width: 200px;
+    background-image:linear-gradient(to bottom,#CCDFF0 0,#245E9E 100%);
+    margin: 50px;
+    
+}*/
+
+
+.bs-docs-featurette-my {
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 33%);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
 }
 
-.portlet-content
-{
-	font-size:0.9em;
-	margin: 0 0 15px 0;
-	padding: 5px 8px;
-	background:#EFFDFF;
+.my-not-padding{
+    padding:0 !important;
+}
+.my-margin{
+    padding: 20px 
+}
+.my-width{
+min-width: 220px !important;
 }
 
-.portlet-content ul
-{
-	list-style-image:none;
-	list-style-position:outside;
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
+.map{
+    max-width: 80%; 
+    height: 400px;
+    margin: 0 auto;
+    
+}
+.ymaps-map{
+    border-radius: 20px;
+}
+.my-form{
+    margin: 8px 0;
+}
+.navbar-form.navbar-right.my-form:last-child {
+    margin-right: 0;
+}
+.pointer{
+    cursor: pointer;
 }
 
-.portlet-content li
-{
-	padding: 2px 0 4px 0px;
+#form-log{
+    display: none;
+    z-index: 1070;
+    
 }
 
-.operations
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.bg-opacity05{
+    background-color: hsl(0, 0%, 0%);
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;   
 }
 
-.operations li
-{
-	padding-bottom: 2px;
+#table_autor{    
+    border-radius: 10px;    
+    left: 35%;
+    min-height: 250px;
+    position: fixed;
+    top: 5%;
+    width: 450px;
+}
+.padding10{
+    padding: 10px;
+}
+.modal-footer{
+    margin-top:0;    
 }
 
-.operations li a
-{
-	font: bold 12px Arial;
-	color: #0066A4;
-	display: block;
-	padding: 2px 0 2px 8px;
-	line-height: 15px;
-	text-decoration: none;
+.modal-body {
+    padding-bottom: 0px;
+  
 }
 
-.operations li a:visited
-{
-	color: #0066A4;
+
+.dotted{
+ border-bottom: 1px dotted hsl(0, 0%, 20%);
+    text-decoration: none;
+    }
+    
+.dotted:hover{
+ border-bottom:  none;
+    }   
+    
+ .font60{
+    font-size: 60%;
+ } 
+ .navbar-brand60 {
+    min-height: 60px;
+ }
+ 
+ .city{
+    line-height: 17px;
+    /*margin-left: -30px !important;*/
+ }
+
+ #login{
+   line-height: 15px;
+    padding-bottom: 10px;
+    
+ }
+
+/*header .col-sm-2 {
+    padding: 0;
+    width: 1.6667%;
+}*/
+
+.navbar-nav {
+    margin-bottom:0.5px !important;
+    
 }
 
-.operations li a:hover
-{
-	background: #80CFFF;
+.navbar-brand-xs {
+    padding: 20px 10px;
+ }
+.navbar-brand { 
+    padding-left: 5px;
+    padding-right: 5px;
+
+    
 }
+.p-centr{
+    position: static;
+    text-align: center;
+    float: none !important;
+}
+.menu{
+    text-align: center;
+    color: hsl(264, 34%, 36%);
+}
+.navbar-inverse  .menu{
+    text-align: center;
+    color: white;
+}
+
+
+
+.icon-bar {    
+    width: 37px !important;
+} 
+.font20{
+    font-size: 20px;
+}
+
+.font40{
+    font-size: 40px;
+}
+.mt55{
+    margin-top: 55px;
+}
+.mt25{
+    margin-top: 25px;
+}
+/*.radi:hover{
+    color: red;
+    transform: rotate(60deg);
+}*/
+.dengi{
+    
+     
+     /*width: 40px;*/
+     height: 40px;
+
+}
+
+.width-dengi{
+    width: 120px;
+    margin-bottom: 5px; 
+}
+.dengi-info{
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+}
+.my-indent{
+    text-indent: 40px;
+}
+          
+.p-top80{
+    padding-top: 140px !important;
+
+}
+.p-top10{
+    padding-top: 10px !important;
+}
+
+.pd{
+    padding-left: 10px;
+   
+}
+
+.btn-w170{
+    width: 170px;
+}
+.btn-mgb10{
+    margin-bottom: 10px
+}
+#check1{
+    /*font-size: 120%;*/
+    font-weight: bold;
+}
+#form-other {
+    display: none;
+}
+
+.geo-ip{
+    color: black;
+}
+body {
+    opacity: 1;
+   
+}
+
+.form-mess{
+    display: none;    
+}
+
+.exampleInputFile{  
+    margin: 0 auto;
+
+}
+.step2{
+    display: none;
+}
+
+.margin-bottom-not{
+    margin-bottom: 0;
+}
+
+#vis2, #vis3{
+    display: none;
+}
+
+.no-viw{
+    display: none;
+}
+
+#info-intro{
+    display: none;
+}
+
+.red{
+    background: red;
+}
+
+

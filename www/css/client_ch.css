@@ -1,0 +1,30 @@
+.CheckBoxClass {
+    display: none;
+}
+.CheckBoxLabelClass{
+   
+    padding-left: 30px;
+    padding-top: 3px;
+    margin: 5px;    
+  
+    display: block !important;
+}
+.CheckBoxLabelClass:hover{
+    text-decoration: underline;
+}
+
+.glyphicon{
+    margin-right:10px;
+    font-size:18px;
+
+}
+
+.glyphicon-ok{
+    color: green;
+
+}
+
+.glyphicon-remove{
+    color: red;
+}
+

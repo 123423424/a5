@@ -1,0 +1,135 @@
+.bg-red{
+	 background-color: Crimson;
+}
+nav{
+	text-transform: uppercase;
+}
+
+.bg-blue{
+	 background-color: SteelBlue;
+}
+
+.h90{
+	height: 90px;
+}
+
+.p-top20{
+    padding-top: 20px !important;
+}
+.f-size30{
+	font-size:30px; 
+
+}
+
+.collor-mess{
+	color: Goldenrod;
+}
+
+#orders tbody tr {
+	cursor: pointer;
+}
+
+
+#order-panel{
+	cursor: pointer;
+
+}
+
+.bs-docs-featurette {
+	padding-top:0;
+}
+.mg-bott{
+	margin-bottom: 20px;
+}
+
+body .btn-outline-inverse:hover,.btn-outline-inverse:focus,.btn-outline-inverse:active{
+ 	 background-color: rgb(65, 150, 65);
+ 	color: inherit;
+ text-shadow:none; 
+ border-color:#fff}
+
+.name-mess{
+	font-weight: bold;
+}
+.dialogue  {
+	//height:300px;
+	overflow: auto;
+	
+}
+
+.dial {
+	width: 95%;
+}
+.ajax-exmpl{
+	display: none;
+}
+
+#bt-add_mess{
+	display: none;
+}
+
+  .scroll-pane{
+    height: 300px;
+    //width: 435px;
+    padding-top: 0;
+    padding-right: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+    font-size: 1.1em; 
+  }
+
+.Chat{
+	//opacity: 0;
+	
+}
+.jspVerticalBar{
+	width: 5px;
+	  transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0.6s ease-in-out; /** Firefox **/
+    -o-transition: all 0.6s ease-in-out; /** Opera **/
+}
+.jspVerticalBar:hover{
+	width: 10px;
+	
+};
+
+
+.mess {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+#layer {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: url(http://www.igrice-tigrice.com/wp-content/themes/fungames/images/loading.gif) 50% 50% no-repeat rgba(0,0,0,.3);
+}
+
+/* ----  */
+#contentcontainer {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #999;
+    overflow-y: auto;
+}
+.mess {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+#layer2 {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: url(http://www.igrice-tigrice.com/wp-content/themes/fungames/images/loading.gif) 50% 50% no-repeat rgba(0,0,0,.3);
+}
+
+.scroll-pane{
+	//height: 300px;
+}
+
