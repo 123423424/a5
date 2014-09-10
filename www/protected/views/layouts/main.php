@@ -42,21 +42,7 @@
    
    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
    
-      
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-        
-        
+
 <!-- Подключение скриптов и стилей в head -->
 </head>
 <!-- Ниже BODY -->
@@ -173,17 +159,17 @@
                       <a href="/oplata">ОПЛАТА</a>
                     </li>
                     <li>
-                      <a class="hidden-sm" href="/гарантии.html">ГАРАНТИИ</a>
+                      <a class="hidden-sm" href="/garantii">ГАРАНТИИ</a>
                     </li>
                     <li>
-                      <a href="/условия-работы.html">УСЛОВИЯ</a>
+                      <a href="/yslovia">УСЛОВИЯ</a>
                     </li>
 
                     <li>
-                      <a href="/услуги.html">УСЛУГИ</a>
+                      <a href="/yslygi">УСЛУГИ</a>
                     </li>
                     <li>
-                      <a href="/контакты.html">КОНТАКТЫ</a>
+                      <a href="/contacts">КОНТАКТЫ</a>
                     </li>
 
                   </ul>

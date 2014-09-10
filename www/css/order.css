@@ -33,3 +33,12 @@
 #drop{
     height: 40px;
 }
+
+#upload {
+    display: none;
+    margin-top: 10px;
+}
+
+#origFile{
+    display: none;
+}

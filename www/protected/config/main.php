@@ -63,6 +63,7 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+            'tablePrefix' => 'my_',
 		),
 	/*	*/
 		'errorHandler'=>array(

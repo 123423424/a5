@@ -1,9 +1,9 @@
 <?php
 
-class DefaultController extends Controller
+class DefaultController extends Office
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+		$this->render('office');
 	}
 }

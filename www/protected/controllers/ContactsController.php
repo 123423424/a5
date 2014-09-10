@@ -1,21 +1,13 @@
 <?php
-/**
- * This is the template for generating a controller class file.
- * The following variables are available in this template:
- * - $this: the ControllerCode object
- */
-?>
-<?php echo "<?php\n"; ?>
 
-class <?php echo $this->controllerClass; ?> extends Page // <?php echo $this->baseClass."\n"; ?> 
+class ContactsController extends Page // Controller
+ 
 {
-<?php foreach($this->getActionIDs() as $action): ?>
-	public function action<?php echo ucfirst($action); ?>()
-	{
-		$this->render('<?php echo $action; ?>');
+	public function actionIndex()
+	{  $this->myVar['jsFooter'] = '<script src="'.Yii::app()->request->baseUrl.'/js/novosib.js"></script>';
+		$this->render('index');
 	}
 
-<?php endforeach; ?>
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

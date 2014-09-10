@@ -56,7 +56,7 @@ function cleanId (nId) {
 //значения в двух ячейках , отображает 3 часть первого шага
 function log(event) {
   if (  ($( "#name_topic" ).val() !='') && ($( "#item_name" ).val()!='' )) {    
-  $("#vis3" ).show("slow");
+  $("#vis3, #upload").show("slow");
   $("#item_name-info" ).hide("slow");
 
   }
@@ -154,7 +154,7 @@ $("#page1") .click(function() {
    }    
    //Показать вторую страницу
      if (nexPage ==1) {
-      $(".step1").fadeOut( 300, 0 );
+      $(".step1, #upload").fadeOut( 300, 0 );
       $(".step2").delay(400).fadeTo( 300, 1 );    
    }
 });
@@ -162,7 +162,7 @@ $("#page1") .click(function() {
 //Кнопка обратно Шаг2
 $("#page2-repet") .click(function() {   
     $(".step2").hide();
-    $(".step1").show(); 
+    $(".step1, #upload").show(); 
 });
 
 
@@ -177,7 +177,34 @@ $("#page3") .click(function() {
   nexPage = checkId($("#name_phone"),nexPage)
   nexPage = checkId($("#name_mail"),nexPage)   
    if (nexPage ==1) {
-    alert('ok')    
+    //alert('ok') 
+
+    // Проверка формы
+      var forma = $('#formZakaz');
+
+       //берем из формы метод передачи данных
+        var m_method=forma.attr('method');
+        //получаем адрес скрипта на сервере, куда нужно отправить форму
+        var m_action=forma.attr('action');
+        //получаем данные, введенные пользователем в формате input1=value1&input2=value2...,
+        //то есть в стандартном формате передачи данных формы
+        var m_data=forma.serialize();
+        $.ajax({
+          type: m_method,
+          url: m_action  /*+'/2' */,
+          data: m_data          
+          }).done(function( result ) {
+            alert(result);
+              
+              /* if (result != 'error') {
+               // document.location.href = '/questions?first=1'; 
+              } else  {  $('#tyt').html('<p class="text-center">Такой телефон уже зарегистрирован. Пожалуйста позвоните администратору для решения этого вопроса. +7-952-944-38-87</p>')} */
+                  
+        }).fail(function(result) {
+            $('#tyt').html("нет ответа... Сообщите об ошибке на почту 380-00-63@mail.ru")
+            })        
+        
+
    }
 });
 
@@ -199,7 +226,7 @@ $( document ).on( "click", ".file-add", function() {
     });
 
 
-$("#upload").appendTo("#file-group");
+//$("#upload").appendTo("#file-group");
 
 
 $(document).ready(function() {
@@ -217,6 +244,10 @@ $(document).ready(function() {
       });
     });
 
+$("#clonFile").click(function(event) {
+  $("#origFile, #upload2").click();
+});
 
 
+///////////////////
 
