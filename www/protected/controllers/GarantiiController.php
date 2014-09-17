@@ -4,7 +4,7 @@ class GarantiiController extends Page // Controller
  
 {
 	public function actionIndex()
-	{
+	{  $this->myVar['title'] ='Гарантии ';
 		$this->render('index');
 	}
 

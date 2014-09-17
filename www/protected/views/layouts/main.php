@@ -20,7 +20,7 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Сделать заказ | Автомат5+</title>
+        <title> <?=$this->myVar['title']?> | Автомат5+</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -239,7 +239,13 @@
             </li>
           </ul>
           <div class="text-center">
-            Спроектирован с любовью 
+            Спроектирован с любовью <?php /*
+            echo '*';
+	if (isset(Yii::app()->user->id['Name'])) {echo Yii::app()->user->id['Name'].':'.Yii::app()->user->id['id']; }
+    echo '/';
+    if (isset(Yii::app()->user->name)) {echo Yii::app()->user->name; }
+     echo '*';*/
+?>
             <a target="_blank" href="http://сайтсайтов.рф/">СайтСайтов</a>
             .
           </div>

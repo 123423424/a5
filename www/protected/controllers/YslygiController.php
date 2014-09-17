@@ -4,7 +4,7 @@ class YslygiController extends Page // Controller
  
 {
 	public function actionIndex()
-	{
+	{  $this->myVar['title'] ='Услуги';
 		$this->render('index');
 	}
 

@@ -7,46 +7,30 @@
                 <h3 class="modal-title panel-title" id="myModalLabel">Для зарегистрированных пользователей</h3>
               </div>
               <div class="modal-body">
-              <div class="lead">
-              	Такой E-mail уже зарегистрирован.  Пожалуйста, введите пароль. <br />
-              	Если Вы не помните пароль, воспользуйтесь функцией 
-
-              	 <a class="btn btn-primary  btn-sm " role="button">Забыли пароль?</a>  или укажите
-              	 <a class="btn btn-primary  btn-sm " aria-hidden="true" data-dismiss="modal" type="button">другой email</a>
-
-              	
+              <div class="lead text-center">
+              	Такой E-mail уже зарегистрирован.  <br /> Но пароли не совпадаеют.</div>
+              	<div class="text-center">Если Вы не помните пароль, воспользуйтесь функцией 
+              	 <a class="btn btn-primary  btn-xs " role="button">Забыли пароль?</a>  или укажите
+              	 <a class="btn btn-primary  btn-xs" aria-hidden="true" data-dismiss="modal" type="button">другой email</a>
+</div>
 
 
-              	
-              </div>
-
-
-                <form role="form">
-                  <div class="form-group has-success has-feedback">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите email">
-                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-                  </div>
+                <form role="form">                  
                   <div class="form-group has-error has-feedback">
-                    <label for="exampleInputPassword1">Пароль</label>
-
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                    <label for="errPassword">Напишите верный пароль:</label>
+                    <input type="password" class="form-control" id="errPassword" placeholder="пароль" value="">                   
 
                     <p class="bg-danger padding10">Введен не верный пароль</p>
                   </div>
-                  <div class="form-group">
-
-                    <a href="">Забыли пароль? Восстановить.</a>
-                  </div>
+                
 
                   <div class="modal-footer">
                     <div class="btn-group btn-group-justified">
                       <div class="btn-group">
-                        <button type="button" class="btn btn-default">Зарегистрироваться</button>
+                        <button type="button" class="btn btn-default">Назад</button>
                       </div>
                       <div class="btn-group">
-                        <button type="submit" class="btn btn-primary">Войти</button>
+                        <button type="button" id='sumbPass' class="btn btn-primary">Отправить</button>
                       </div>
                     </div>
                   </div>

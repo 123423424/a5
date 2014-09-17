@@ -4,7 +4,7 @@ class YsloviaController extends Page // Controller
  
 {
 	public function actionIndex()
-	{
+	{  $this->myVar['title'] ='Условия';
 		$this->render('index');
 	}
 

@@ -22,7 +22,9 @@ class Page extends CController
 	public $breadcrumbs=array();
     public $myVar=array('navbar'    => 'static', 
                         'css'       => '', 
-                        'jsFooter'  => '',                         
+                        'jsFooter'  => '',  
+                        'title'  => '',   
+                                             
                         
                         );
     

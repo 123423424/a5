@@ -5,6 +5,7 @@ class ZakazController extends Page
 	public function actionIndex()
 	{   $this->myVar['css'] = '<link rel="stylesheet" href="'.Yii::app()->request->baseUrl.'/css/order.css">';
         $this->myVar['jsFooter'] = '<script src="'.Yii::app()->request->baseUrl.'/js/main_order.js"></script>';
+        $this->myVar['title'] ='Заявка';
 		$this->render('index');
 	}
 

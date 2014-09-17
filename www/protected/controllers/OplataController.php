@@ -4,6 +4,7 @@ class OplataController extends Page
 {
 	public function actionIndex()
 	{   $this->myVar['jsFooter'] = '<script src="'.Yii::app()->request->baseUrl.'/js/novosib.js"></script>';
+    $this->myVar['title'] ='Оплата ';
 		$this->render('oplata');
 	}
 

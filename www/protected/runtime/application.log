@@ -3088,3 +3088,361 @@ Stack trace:
 REQUEST_URI=/chekZakaz
 in K:\home\a5\www\protected\controllers\ChekZakazController.php (78)
 in K:\home\a5\www\index.php (13)
+2014/09/18 00:27:49 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru".
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (28)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:27:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. The SQL statement executed was: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru"' in K:\home\a5\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\a5\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\a5\www\protected\controllers\ChekZakazController.php(28): CDbCommand->queryAll()
+#2 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#3 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#8 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 K:\home\a5\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:28:05 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru".
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (28)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:28:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. The SQL statement executed was: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru"' in K:\home\a5\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\a5\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\a5\www\protected\controllers\ChekZakazController.php(28): CDbCommand->queryAll()
+#2 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#3 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#8 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 K:\home\a5\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:28:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru".
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (28)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:28:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. The SQL statement executed was: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m33ail.ru"' in K:\home\a5\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\a5\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\a5\www\protected\controllers\ChekZakazController.php(28): CDbCommand->queryAll()
+#2 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#3 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#8 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 K:\home\a5\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:30:00 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m533ail.ru".
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (28)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:30:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mail' in 'where clause'. The SQL statement executed was: SELECT `id`
+FROM `my_orders`
+WHERE mail="v2vv2-v@m533ail.ru"' in K:\home\a5\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\a5\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\a5\www\protected\controllers\ChekZakazController.php(28): CDbCommand->queryAll()
+#2 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#3 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#8 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 K:\home\a5\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:30:49 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. Выполнявшийся SQL-запрос: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (89)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:30:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. The SQL statement executed was: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(89): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:31:19 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. Выполнявшийся SQL-запрос: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (89)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:31:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. The SQL statement executed was: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(89): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:32:06 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. Выполнявшийся SQL-запрос: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (89)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:32:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. The SQL statement executed was: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(89): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:33:29 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. Выполнявшийся SQL-запрос: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (90)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:33:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. The SQL statement executed was: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'e4da3b7fbbce2345d7772b0674a318d5',
+                         ''                                                
+                          )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(90): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 00:35:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. Выполнявшийся SQL-запрос: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'd41d8cd98f00b204e9800998ecf8427e',
+                         ''                                                
+                          ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (91)
+in K:\home\a5\www\index.php (13)
+2014/09/18 00:35:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`                     
+                         ) 
+                VALUES ( '' at line 6. The SQL statement executed was: INSERT INTO my_client 
+                        (`name`,
+                         `phone`,
+                         `mail`,
+                         `pass`,
+                         `vk`                         `                     
+                         ) 
+                VALUES ( 'Педогогика',
+                         '+7(423)423-43-24',
+                         'v2vv2-v@m533ail.ru',
+                         'd41d8cd98f00b204e9800998ecf8427e',
+                         ''                                                
+                          )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(91): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 02:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/bootstrap-theme.css.map".' in K:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap-theme.css.map
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 02:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/bootstrap.css.map".' in K:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 02:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/bootstrap-theme.css.map".' in K:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap-theme.css.map
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/18 02:07:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/bootstrap.css.map".' in K:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 K:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://a5/zakaz
+---

@@ -174,7 +174,14 @@ cleanId($("#name_phone"))
 cleanId($("#name_mail"))
 cleanId($("#name_pass"))
 
+//$('#repeatMail').modal()
 
+//При совпадении паролей появляется модальное окно в нем можно ввести пароль который бедет вставлен в форму (модальное окно вызывается в другой функции)
+$("#sumbPass") .click(function(event) {
+  var str = $("#errPassword").val();
+  $("#name_pass").val(str);   
+  $("#page3").click();
+});
 
 
 $("#page3") .click(function() {  
@@ -200,14 +207,16 @@ $("#page3") .click(function() {
         $.ajax({
           type: m_method,
           url: m_action  /*+'/2' */,
-          data: m_data          
+          data: m_data ,
+          dataType: "json"          
           }).done(function( result ) {
-            //alert(result);
-           
+            //alert(result.stringify + 'done');           
             $("#mailRe").hide().html('');
-            if (result ==4) {$('#repeatMail').modal()}
-
             
+            if (result.err =='true') {
+
+              $('#repeatMail').modal()
+            } 
 
               /*
               .parents(".form-group").addClass("has-error")
@@ -222,6 +231,7 @@ $("#page3") .click(function() {
               } else  {  $('#tyt').html('<p class="text-center">Такой телефон уже зарегистрирован. Пожалуйста позвоните администратору для решения этого вопроса. +7-952-944-38-87</p>')} */
                   
         }).fail(function(result) {
+            alert(result + 'fail')
             $('#tyt').html("нет ответа... Сообщите об ошибке на почту 380-00-63@mail.ru")
             })        
         

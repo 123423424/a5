@@ -3,7 +3,7 @@
 class DiplomController extends Page
 {
 	public function actionIndex()
-	{  
+	{   $this->myVar['title'] ='Диплом';
 		$this->render('index');
 	}
 

@@ -42,26 +42,40 @@ class AjaxController extends CController {
             item VARCHAR(255) NOT NULL default "",
             datepicker VARCHAR(255) NOT NULL default "",
             sources  VARCHAR(255) NOT NULL default "",
-            requirement VARCHAR(255) NOT NULL default "",
+            requirement VARCHAR(255) NOT NULL default "",           
             
-            name VARCHAR(255) NOT NULL default "",
-            phone VARCHAR(255) NOT NULL default "",
-            mail  VARCHAR(255) NOT NULL default "",
-            pass VARCHAR(255) NOT NULL default "",
-            
-            vk VARCHAR(255) NOT NULL default "",
             institution VARCHAR(255) NOT NULL default "",
             volume VARCHAR(255) NOT NULL default "",           
-            
-                             
-            INDEX (phone),
-            INDEX (mail)          
+                                         
+            INDEX (idClient)          
             )  
             ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci';
             
        $s= Yii::app()->db->createCommand($sql)->execute();         
         echo 'Orders';  
 	}
+            //Клиент
+        public function actionClient()	
+        {             
+           $sql='CREATE TABLE IF NOT EXISTS  {{client}}  (
+            id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+           
+            name VARCHAR(255) NOT NULL default "",
+            phone VARCHAR(255) NOT NULL default "",
+            mail  VARCHAR(255) NOT NULL default "",
+            pass VARCHAR(255) NOT NULL default "",            
+            vk VARCHAR(255) NOT NULL default "", 
+           
+            other VARCHAR(255) NOT NULL default "",
+            
+            INDEX (mail)     
+            )  
+            ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci';
+                      
+       $s= Yii::app()->db->createCommand($sql)->execute();
+        echo 'client';  
+	}
+    
     
          //файлы
         public function actionFile()	
@@ -97,17 +111,7 @@ class AjaxController extends CController {
         echo 'members';  
 	}
     
-      //Собственникижилья
-        public function actionClient()	
-        {             
-           $sql='CREATE TABLE IF NOT EXISTS  {{client}}  (
-            
-            
-            ';           
-       $s= Yii::app()->db->createCommand($sql)->execute();
-        echo 'client';  
-	}
-    
+  
       //Собственникижилья
         public function actionAuthor()	
         {             

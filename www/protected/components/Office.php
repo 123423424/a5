@@ -23,7 +23,7 @@ class Office extends CController
     public $myVar=array('navbar'    => 'static', 
                         'css'       => '', 
                         'jsFooter'  => '',                         
-                        
+                        'title'  => '', 
                         );
     
 }

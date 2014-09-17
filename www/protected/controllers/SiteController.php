@@ -30,6 +30,7 @@ class SiteController extends Page
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->myVar['navbar'] ='fixed';
+        $this->myVar['title'] ='Дипломная работа на заказ. Заказать диплом.';
         $this->render('index');
 	}
 
