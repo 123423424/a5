@@ -1,8 +1,13 @@
 //Отображение без скачеков
 $(document).ready(function(){ 	
 	//Плавное отображение страницы
-	$('body').animate({opacity: 0},0 );
-	$('body').animate({opacity: 1},300 );
+	/* $('body').animate({opacity: 0},0 );
+	$('body').animate({opacity: 1},1000 ); */
+
+	//Плавное отображение страницы
+	$('body').fadeOut(0);
+	$('body').fadeIn( 700 );
+
 
     //Ширина и высота экрана
    /* var siW, siH;

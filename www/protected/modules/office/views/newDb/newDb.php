@@ -10,16 +10,26 @@
 			<div class="col-sm-2"></div>
 			<div class="col-sm-8">
 				<p>отправляются в контроллер Ajax</p>
-<p><a class="btn btn-primary btn-xs query" role="button" data-query="Homeowners">Собственники</a></p>
+                
+                
+<p><a class="btn btn-primary btn-xs query" role="button" data-query="Orders">Заказы</a></p>
 <hr />
 
-<p><a class="btn btn-primary btn-xs query" role="button" data-query="Unanswered">Отвеченные вопросы</a>
-<a class="btn btn-primary btn-xs query" role="button" data-query="Answers">Ответы</a></p>
+<p><a class="btn btn-primary btn-xs query" role="button" data-query="Members">Пользователи</a></p>
 <hr />
 
-<p><a class="btn btn-primary btn-xs query" role="button" data-query="Topics">Вопросы</a></p>
+<p><a class="btn btn-primary btn-xs query" role="button" data-query="Client">Клиент</a>
+<p><a class="btn btn-primary btn-xs query" role="button" data-query="File">id Файлов</a>
+<a class="btn btn-primary btn-xs query" role="button" data-query="Author">Автор</a></p>
+<hr />
+
 				
-			</div>
+   
+   
+   
+   
+   
+    </div>
 		</div>
 
 		

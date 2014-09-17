@@ -1,6 +1,8 @@
 var numberFile=0;
 var chFile = 0;
 var chMess = 0;
+var iMy = 0;
+
 
 // использование Math.round() даст неравномерное распределение!
 function getRandomInt()
@@ -21,7 +23,6 @@ $(function(){
 
     // Initialize the jQuery File Upload plugin
     $('#upload').fileupload({
-
 
         // This element will accept file drag/drop uploading
         dropZone: $('#drop'),
@@ -59,9 +60,6 @@ $(function(){
                  }
                if (chMess == 1 ) { return;}
 
-
-
-
             var tpl = $('<li class="working">  <div class="important-file"></div>               <div class="row">                  <div class="col-sm-6">                    <p></p>                    <span></span>                </div>                  <div class="col-sm-6">                    <div class="progress progress-striped active">Процес </div>                  </div>                </div>              </li>');
 
             // Append the file name and file size
@@ -95,6 +93,7 @@ $(function(){
             },
 
         progress: function(e, data){
+            $('#page1').attr('disabled','disabled');
             var n; 
 
             // Calculate the completion percentage of the upload
@@ -119,13 +118,16 @@ $(function(){
         },
 
         fail:function(e, data){
+            $('#page1').removeAttr('disabled');
             // Something has gone wrong!
             data.context.addClass('error');
         },
         success: function() {
+            $('#page1').removeAttr('disabled');
             console.log(arguments);
            var cart = JSON.parse ( arguments[0] );
-           $('#tyt').append(cart.param);
+           $('#formZakaz').append('<input type="hidden" name = "file['+iMy+']" value="'+cart.param+'">');
+           iMy++;
 
            if (cart.infoError =='yes') {
            var fileNameCut;
@@ -183,3 +185,4 @@ $(function(){
       $("file-msg2" ) .html('');
      }
 */
+

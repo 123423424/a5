@@ -6,12 +6,135 @@ class AjaxController extends CController {
     function actionIndex(){
        if (Yii::app()->user->name != 'MaXiM'){ die('ddd');} else {echo 'jjj';}
     }    
-        //Собственникижилья
-        public function actionHomeowners()	
+    
+    /*
+            ->
+            check1=>задачи/
+            other=>Другое/
+            name_topic=>Темавы/
+            item_name=>Предмет5/
+            datepicker=>25.09.2014/
+            name_sources=>Объем/
+            name_requirement=>Требования/
+            name_name=>Имя/
+            name_phone=>+7(654) 654-64-56/
+            name_mail=>vvv-v@mail.ru/
+            name_vk=>Ссылка на Вашу страницу /
+            name_institution=>Курс/
+            name_volume=>Антиплагиат/
+            name_pass=>534535
+            */               
+        
+        //Заказы
+        public function actionOrders()	
+        {             
+            $sql='CREATE TABLE IF NOT EXISTS  {{orders}}  (
+            id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,    
+            idClient INT UNSIGNED NOT NULL default 0,  
+            ip INT UNSIGNED NOT NULL,
+            Date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+            visible TINYINT NOT NULL default 1, 
+            chFile TINYINT NOT NULL default 0,
+            
+            type VARCHAR(255) NOT NULL default "",
+            type_other VARCHAR(255) NOT NULL default "",
+            topic VARCHAR(255) NOT NULL default "",
+            item VARCHAR(255) NOT NULL default "",
+            datepicker VARCHAR(255) NOT NULL default "",
+            sources  VARCHAR(255) NOT NULL default "",
+            requirement VARCHAR(255) NOT NULL default "",
+            
+            name VARCHAR(255) NOT NULL default "",
+            phone VARCHAR(255) NOT NULL default "",
+            mail  VARCHAR(255) NOT NULL default "",
+            pass VARCHAR(255) NOT NULL default "",
+            
+            vk VARCHAR(255) NOT NULL default "",
+            institution VARCHAR(255) NOT NULL default "",
+            volume VARCHAR(255) NOT NULL default "",           
+            
+                             
+            INDEX (phone),
+            INDEX (mail)          
+            )  
+            ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci';
+            
+       $s= Yii::app()->db->createCommand($sql)->execute();         
+        echo 'Orders';  
+	}
+    
+         //файлы
+        public function actionFile()	
+        {             
+            $sql='CREATE TABLE IF NOT EXISTS  {{file}}  (
+            id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+            idOrders INT UNSIGNED NOT NULL default 0,
+            pathTo VARCHAR(255) NOT NULL default "",  
+                             
+            INDEX (idOrders)         
+            )  
+            ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci';
+            
+       $s= Yii::app()->db->createCommand($sql)->execute();
+        echo 'FileRRR';  
+	}
+    
+        
+          //Собственникижилья
+        public function actionMembers()	
         {             
             //CURRENT_TIMESTAMP, - автоматически вставить текущую дату
             // Create table ЗАКАЗЫ 
-            $sql='CREATE TABLE IF NOT EXISTS  {{homeowners}}  (
+            $sql='CREATE TABLE IF NOT EXISTS  {{members}}  (
+            
+            
+            ';
+            //$sql='SELECT * FROM {{user}}';
+       $s= Yii::app()->db->createCommand($sql)->execute(); 
+        
+        //$this->render('homeowners');  
+        //$this->renderPartial ('homeowners');    
+        echo 'members';  
+	}
+    
+      //Собственникижилья
+        public function actionClient()	
+        {             
+           $sql='CREATE TABLE IF NOT EXISTS  {{client}}  (
+            
+            
+            ';           
+       $s= Yii::app()->db->createCommand($sql)->execute();
+        echo 'client';  
+	}
+    
+      //Собственникижилья
+        public function actionAuthor()	
+        {             
+            //CURRENT_TIMESTAMP, - автоматически вставить текущую дату
+            // Create table ЗАКАЗЫ 
+            $sql='CREATE TABLE IF NOT EXISTS  {{author}}  (
+            
+            
+            ';           
+       $s= Yii::app()->db->createCommand($sql)->execute();
+        echo 'author';  
+	}
+        
+  
+     
+        
+     
+        
+        
+        
+        ////////////////////////////////////////////////////////////
+        //Собственникижилья
+        public function actionOrders2()	
+        {             
+            //CURRENT_TIMESTAMP, - автоматически вставить текущую дату
+            // Create table ЗАКАЗЫ 
+            $sql='CREATE TABLE IF NOT EXISTS  {{orders}}  (
             id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,            
             firstName VARCHAR(255) NOT NULL,
             lastName VARCHAR(255) NOT NULL,

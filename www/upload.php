@@ -1,5 +1,5 @@
 <?php
-//sleep(2);
+//sleep(5);
 
 if(isset($_FILES['upl']) && $_FILES['upl']['error'] == 0){
     
@@ -35,7 +35,7 @@ $latinPattern = array( 'a','b','v','g','d','e','jo','zh','z','i','y','k','l','m'
         'F' ,'H' ,'Ts' ,'Ch','Sh','Sht', '', '`', 'Je' ,'Ji' ,'Yu' ,'Ya' );
 
 $someText = str_replace($cyrillicPattern, $latinPattern, $cyrillicTxt);
-
+$someText =  preg_replace ("/[^a-zA-Z0-9\.,_() -]/","", $someText );
 $rand = rand(1000000, 9999999);
 $name_file = $rand.'-'.$someText;
 

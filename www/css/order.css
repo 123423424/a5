@@ -39,6 +39,10 @@
     margin-top: 10px;
 }
 
-#origFile{
+#origFile, #phoneRe{
     display: none;
+}
+
+.tLeft{
+text-align: left;
 }

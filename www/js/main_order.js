@@ -31,6 +31,7 @@ $.datepicker.regional['ru'] = {
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
+
 //Проверяет ячейку на пустату при нажатии кнопки далее. Если ячейка пуста сообщает об этом. 
 //nId - id устанавливаемого класса
 //nexP - возвращеное значение для общей проверки
@@ -154,7 +155,8 @@ $("#page1") .click(function() {
    }    
    //Показать вторую страницу
      if (nexPage ==1) {
-      $(".step1, #upload").fadeOut( 300, 0 );
+      $(".step1").fadeOut( 300, 0 );
+      $("#upload, #uploadRe").hide();
       $(".step2").delay(400).fadeTo( 300, 1 );    
    }
 });
@@ -162,7 +164,7 @@ $("#page1") .click(function() {
 //Кнопка обратно Шаг2
 $("#page2-repet") .click(function() {   
     $(".step2").hide();
-    $(".step1, #upload").show(); 
+    $(".step1, #upload, #uploadRe").show(); 
 });
 
 
@@ -170,12 +172,18 @@ $("#page2-repet") .click(function() {
 cleanId($("#name_name"))
 cleanId($("#name_phone"))
 cleanId($("#name_mail"))
+cleanId($("#name_pass"))
+
+
+
 
 $("#page3") .click(function() {  
   var nexPage = 1;
   nexPage = checkId($("#name_name"),nexPage)
   nexPage = checkId($("#name_phone"),nexPage)
-  nexPage = checkId($("#name_mail"),nexPage)   
+  nexPage = checkId($("#name_mail"),nexPage) 
+  nexPage = checkId($("#name_pass"),nexPage) 
+ 
    if (nexPage ==1) {
     //alert('ok') 
 
@@ -194,7 +202,20 @@ $("#page3") .click(function() {
           url: m_action  /*+'/2' */,
           data: m_data          
           }).done(function( result ) {
-            alert(result);
+            //alert(result);
+           
+            $("#mailRe").hide().html('');
+            if (result ==4) {$('#repeatMail').modal()}
+
+            
+
+              /*
+              .parents(".form-group").addClass("has-error")
+    .children('.form-mess').show("slow");
+
+
+            */
+              //#phoneRe
               
               /* if (result != 'error') {
                // document.location.href = '/questions?first=1'; 

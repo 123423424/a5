@@ -2648,3 +2648,443 @@ Stack trace:
 REQUEST_URI=/upload.php
 HTTP_REFERER=http://a5/zakaz
 ---
+2014/09/12 22:50:39 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:50:40 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:51:40 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:51:43 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:52:04 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:52:23 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:52:23 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:52:33 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:53:35 [error] [exception.CException] exception 'CException' with message 'Псевдоним "application.folder.Verification" неверен. Убедитесь, что он указывает на существующий PHP файл.' in K:\home\a5\www\framework\YiiBase.php:322
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(35): YiiBase::import('application.fol...', true)
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/12 22:55:42 [error] [php] Undefined variable: telephoneInput (K:\home\a5\www\protected\controllers\ChekZakazController.php:45)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (45)
+in K:\home\a5\www\index.php (13)
+2014/09/12 23:48:20 [error] [php] Undefined variable: telephoneInput (K:\home\a5\www\protected\controllers\ChekZakazController.php:45)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (45)
+in K:\home\a5\www\index.php (13)
+2014/09/12 23:48:45 [error] [php] Undefined variable: telephoneInput (K:\home\a5\www\protected\controllers\ChekZakazController.php:45)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (45)
+in K:\home\a5\www\index.php (13)
+2014/09/12 23:50:06 [error] [php] Undefined variable: telephoneInput (K:\home\a5\www\protected\controllers\ChekZakazController.php:46)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (46)
+in K:\home\a5\www\index.php (13)
+2014/09/12 23:54:05 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'a5.my_orders2' doesn't exist. Выполнявшийся SQL-запрос: SELECT `id`
+FROM `my_orders2` `u`
+WHERE phone="+7(654)654-64-56".
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (49)
+in K:\home\a5\www\index.php (13)
+2014/09/12 23:54:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'a5.my_orders2' doesn't exist. The SQL statement executed was: SELECT `id`
+FROM `my_orders2` `u`
+WHERE phone="+7(654)654-64-56"' in K:\home\a5\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\a5\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\a5\www\protected\controllers\ChekZakazController.php(49): CDbCommand->queryAll()
+#2 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#3 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#7 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#8 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 K:\home\a5\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/13 00:21:11 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:57)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (57)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:21:32 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:57)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (57)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:21:36 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:57)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (57)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:33:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in K:\home\a5\www\framework\web\CController.php:336
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#4 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#5 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 K:\home\a5\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/13 00:35:31 [error] [php] Undefined variable: str (K:\home\a5\www\protected\controllers\ChekZakazController.php:132)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (132)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:35:54 [error] [php] Undefined variable: str (K:\home\a5\www\protected\controllers\ChekZakazController.php:132)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (132)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:38:08 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:61)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (61)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:38:23 [error] [php] Undefined index: file[] (K:\home\a5\www\protected\controllers\ChekZakazController.php:61)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (61)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:39:12 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:63)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (63)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:45:27 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:62)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (62)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:45:52 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:62)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (62)
+in K:\home\a5\www\index.php (13)
+2014/09/13 00:45:59 [error] [php] Undefined index: file (K:\home\a5\www\protected\controllers\ChekZakazController.php:62)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (62)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:15:48 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idOrders' in 'field list'. Выполнявшийся SQL-запрос: INSERT INTO my_orders 
+                                    (`idOrders`,
+                                     `pathTo`             
+                                     ) 
+                            VALUES ( '24524',
+                                      '6196807-1.png'         
+                                      ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (71)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:15:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idOrders' in 'field list'. The SQL statement executed was: INSERT INTO my_orders 
+                                    (`idOrders`,
+                                     `pathTo`             
+                                     ) 
+                            VALUES ( '24524',
+                                      '6196807-1.png'         
+                                      )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(71): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/13 03:16:34 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idOrders' in 'field list'. Выполнявшийся SQL-запрос: INSERT INTO my_orders 
+                                    (`idOrders`,
+                                     `pathTo`             
+                                     ) 
+                            VALUES ( '24524',
+                                      '6196807-1.png'         
+                                      ).
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (71)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:16:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'idOrders' in 'field list'. The SQL statement executed was: INSERT INTO my_orders 
+                                    (`idOrders`,
+                                     `pathTo`             
+                                     ) 
+                            VALUES ( '24524',
+                                      '6196807-1.png'         
+                                      )' in K:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 K:\home\a5\www\protected\controllers\ChekZakazController.php(71): CDbCommand->execute()
+#1 K:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#2 K:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#7 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 K:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/13 03:17:46 [error] [php] Undefined variable: someText (K:\home\a5\www\protected\controllers\ChekZakazController.php:78)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (78)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:18:13 [error] [php] Undefined variable: someText (K:\home\a5\www\protected\controllers\ChekZakazController.php:78)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (78)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:18:26 [error] [php] Undefined variable: someText (K:\home\a5\www\protected\controllers\ChekZakazController.php:78)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (78)
+in K:\home\a5\www\index.php (13)
+2014/09/13 03:19:16 [error] [php] Undefined variable: someText (K:\home\a5\www\protected\controllers\ChekZakazController.php:78)
+Stack trace:
+#0 K:\home\a5\www\framework\web\CController.php(286): ChekZakazController->runAction()
+#1 K:\home\a5\www\framework\web\CController.php(265): ChekZakazController->runActionWithFilters()
+#2 K:\home\a5\www\framework\web\CWebApplication.php(282): ChekZakazController->run()
+#3 K:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 K:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 K:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/chekZakaz
+in K:\home\a5\www\protected\controllers\ChekZakazController.php (78)
+in K:\home\a5\www\index.php (13)

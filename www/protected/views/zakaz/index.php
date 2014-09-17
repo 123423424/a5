@@ -1,4 +1,64 @@
-<!-- Слайдер -->
+<!-- Modal  Login-->
+        <div class="modal fade" id="repeatMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content panel panel-primary">
+              <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title panel-title" id="myModalLabel">Для зарегистрированных пользователей</h3>
+              </div>
+              <div class="modal-body">
+              <div class="lead">
+              	Такой E-mail уже зарегистрирован.  Пожалуйста, введите пароль. <br />
+              	Если Вы не помните пароль, воспользуйтесь функцией 
+
+              	 <a class="btn btn-primary  btn-sm " role="button">Забыли пароль?</a>  или укажите
+              	 <a class="btn btn-primary  btn-sm " aria-hidden="true" data-dismiss="modal" type="button">другой email</a>
+
+              	
+
+
+              	
+              </div>
+
+
+                <form role="form">
+                  <div class="form-group has-success has-feedback">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите email">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                  </div>
+                  <div class="form-group has-error has-feedback">
+                    <label for="exampleInputPassword1">Пароль</label>
+
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+
+                    <p class="bg-danger padding10">Введен не верный пароль</p>
+                  </div>
+                  <div class="form-group">
+
+                    <a href="">Забыли пароль? Восстановить.</a>
+                  </div>
+
+                  <div class="modal-footer">
+                    <div class="btn-group btn-group-justified">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default">Зарегистрироваться</button>
+                      </div>
+                      <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+<!-- Слайдер --> 
 <div id="content" class="bs-docs-header">
 	<div class="container">
 		<div class="row">
@@ -32,14 +92,17 @@
 
 			<!-- Инструкция по оплате -->
 
+
 			<form id ='formZakaz' action="/chekZakaz" method="post" class="form-horizontal" role="form" oninput="log(event)" >
+				<!-- <input type="hidden" value="777" name="file[10]"> -->
+
 				<!-- Шаг 1 Информация о заказе-->
 				<div class="step1">
 					<h2 class="bs-docs-featurette-title">Шаг 1. Информация о заказе</h2>
 					<br />
 					<div class="form-group">
 						<label for="check1" class="col-sm-3 control-label">Тип</label>
-						<div class="col-sm-9">
+						<div class="col-sm-9">							
 
 							<select id="check1" class="form-control" style="" size="1" name="check1" >
 								<option selected="" value="">выберите тип работы</option>
@@ -139,7 +202,7 @@
 
 							<!-- Конопка дальше к шагу 2 -->
 							<div class="btn-group">
-								<button type="button" id="page1" class="btn btn-primary">Дальше</button>
+								<button type="button" id="page1" class="btn btn-primary" >Дальше</button>
 							</div>
 
 							<div id="file-msg2"></div>
@@ -167,17 +230,32 @@
 							<input type="text" class="form-control" 
               id="name_phone" name="name_phone"  placeholder="Пример:+7-913-123-12-12"></div>
 						<p class="form-mess bg-danger padding10">Укажите Ваш телефон</p>
+						<span id='phoneRe'></span>
 					</div>
+
 					<div class="form-group">
 						<label for="name_mail" class="col-sm-3 control-label">E-mail</label>
 						<div class="col-sm-9">
 							<input type="text" name="name_mail"  class="form-control" 
               id="name_mail">
+							<p id="name_mail_name-mass" class="form-mess bg-danger padding10"></p>							
+						</div>
+						<p class="form-mess bg-danger padding10">Укажите Вашу почту</p>
+						<span id='mailRe'></span>
+					</div>
+
+					<div class="form-group">
+						<label for="name_pass" class="col-sm-3 control-label">Пароль</label>
+						<div class="col-sm-9">
+							<input type="password" name="name_pass"  class="form-control" 
+              id="name_pass">
 							<p id="name_mail_name-mass" class="form-mess bg-danger padding10"></p>
 						</div>
-
-						<p class="form-mess bg-danger padding10">Укажите Вашу почту</p>
+						<p class="form-mess bg-danger padding10">Пароль должен быть из 6 латинских (от A до Z) символов или цифр</p>
 					</div>
+
+
+
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-9">
 							<label for="name_vk" class="control-label">
@@ -229,6 +307,7 @@
 			</form>
 
 			<!-- Работа с файлами -->
+			<div id="uploadRe">
 			<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
 				<ul><!-- The file uploads will be shown here --> </ul>
 				<div id="drop" class="btn-group fileform">
@@ -237,6 +316,7 @@
 				</div>
 				<div id="info-intro"></div>
 			</form>
+			</div>
 
 			<!-- JavaScript Includes -->
 			<script src="<?=Yii::app()->request->baseUrl?>/file/assets/js/jquery.knob.js"></script>
@@ -264,4 +344,4 @@ jQuery(function($) {
     
    });
 // ]]&gt;</script>
-<!-- /Валидация телефона -->
+<!-- /Валидация телефона
