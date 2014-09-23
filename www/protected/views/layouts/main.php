@@ -40,7 +40,6 @@
         <script src="http://yandex.st/jquery/2.1.1/jquery.min.js"></script> 
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
    
-   <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
    
 
 <!-- Подключение скриптов и стилей в head -->

@@ -1,3 +1,6 @@
+
+
+
 // Календарь
  $(function() {
 $( "#datepicker" ).datepicker({
@@ -211,12 +214,11 @@ $("#page3") .click(function() {
           dataType: "json"          
           }).done(function( result ) {
             //alert(result.stringify + 'done');           
-            $("#mailRe").hide().html('');
-            
+            $("#mailRe").hide().html('');  
+            //Если уже такая почта была отобразить окно          
             if (result.err =='true') {
-
               $('#repeatMail').modal()
-            } 
+            } else {document.location.href = '/client';}
 
               /*
               .parents(".form-group").addClass("has-error")
@@ -231,8 +233,9 @@ $("#page3") .click(function() {
               } else  {  $('#tyt').html('<p class="text-center">Такой телефон уже зарегистрирован. Пожалуйста позвоните администратору для решения этого вопроса. +7-952-944-38-87</p>')} */
                   
         }).fail(function(result) {
-            alert(result + 'fail')
-            $('#tyt').html("нет ответа... Сообщите об ошибке на почту 380-00-63@mail.ru")
+            $('#tyt').hide('slow');
+            
+            $('#tyt').html("нет ответа... Сообщите об ошибке на почту 3802200@mail.ru").show('slow');
             })        
         
 

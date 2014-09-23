@@ -18,7 +18,6 @@ $(document).ready(function(){
 });
 
 
-
 //"Открыть" форму регистрации и ввода
 $('a#login').click(function (e) {
   e.preventDefault()

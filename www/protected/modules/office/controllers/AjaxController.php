@@ -45,7 +45,10 @@ class AjaxController extends CController {
             requirement VARCHAR(255) NOT NULL default "",           
             
             institution VARCHAR(255) NOT NULL default "",
-            volume VARCHAR(255) NOT NULL default "",           
+            volume VARCHAR(255) NOT NULL default "",   
+            
+            status VARCHAR(255) NOT NULL default "Новая заявка", 
+            mess bool default 0,         
                                          
             INDEX (idClient)          
             )  

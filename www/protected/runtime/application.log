@@ -3446,3 +3446,309 @@ Stack trace:
 REQUEST_URI=/css/bootstrap.css.map
 HTTP_REFERER=http://a5/zakaz
 ---
+2014/09/23 10:45:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'a5'' in Z:\home\a5\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\home\a5\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\a5\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 Z:\home\a5\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 Z:\home\a5\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 Z:\home\a5\www\protected\controllers\ChekZakazController.php(30): CModule->__get('db')
+#5 Z:\home\a5\www\framework\web\actions\CInlineAction.php(49): ChekZakazController->actionIndex()
+#6 Z:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 Z:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('')
+#10 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('chekZakaz')
+#11 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\a5\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/chekZakaz
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/23 23:08:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'a5'' in Z:\home\a5\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\home\a5\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\a5\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 Z:\home\a5\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 Z:\home\a5\www\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 Z:\home\a5\www\protected\modules\office\controllers\AjaxController.php(75): CModule->__get('db')
+#5 Z:\home\a5\www\framework\web\actions\CInlineAction.php(49): AjaxController->actionClient()
+#6 Z:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 Z:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('Client')
+#10 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('office/Ajax/Cli...')
+#11 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\a5\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/office/Ajax/Client
+HTTP_REFERER=http://a5/office/NewDb
+---
+2014/09/23 23:09:10 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. Выполнявшийся SQL-запрос: CREATE TABLE IF NOT EXISTS  my_members  (
+            
+            
+            .
+in Z:\home\a5\www\protected\modules\office\controllers\AjaxController.php (107)
+in Z:\home\a5\www\index.php (13)
+2014/09/23 23:09:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: CREATE TABLE IF NOT EXISTS  my_members  (
+            
+            
+            ' in Z:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\a5\www\protected\modules\office\controllers\AjaxController.php(107): CDbCommand->execute()
+#1 Z:\home\a5\www\framework\web\actions\CInlineAction.php(49): AjaxController->actionMembers()
+#2 Z:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('Members')
+#6 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('office/Ajax/Mem...')
+#7 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/office/Ajax/Members
+HTTP_REFERER=http://a5/office/NewDb
+---
+2014/09/23 23:09:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. Выполнявшийся SQL-запрос: CREATE TABLE IF NOT EXISTS  my_author  (
+            
+            
+            .
+in Z:\home\a5\www\protected\modules\office\controllers\AjaxController.php (124)
+in Z:\home\a5\www\index.php (13)
+2014/09/23 23:09:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: CREATE TABLE IF NOT EXISTS  my_author  (
+            
+            
+            ' in Z:\home\a5\www\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\a5\www\protected\modules\office\controllers\AjaxController.php(124): CDbCommand->execute()
+#1 Z:\home\a5\www\framework\web\actions\CInlineAction.php(49): AjaxController->actionAuthor()
+#2 Z:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\a5\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\a5\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\a5\www\framework\web\CWebApplication.php(282): CController->run('Author')
+#6 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('office/Ajax/Aut...')
+#7 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\a5\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/office/Ajax/Author
+HTTP_REFERER=http://a5/office/NewDb
+---
+2014/09/24 02:35:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "Client".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('Client')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Client
+---
+2014/09/24 02:35:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "clienT".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('clienT')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clienT
+---
+2014/09/24 02:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/1311123
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 02:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/undefined".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/undefine...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/undefined
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 02:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/1311123
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 02:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "заказать-работу.html".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('???????????????...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83.html
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 03:12:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "clienT".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('clienT')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clienT
+---
+2014/09/24 04:29:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/site/index/id/100".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/site/ind...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/client/site/index/id/100
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/24 04:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/site/index/id/100".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/site/ind...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/client/site/index/id/100
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/24 04:30:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/site/index/id/100".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/site/ind...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/client/site/index/id/100
+HTTP_REFERER=http://a5/zakaz
+---
+2014/09/24 04:33:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/undefined".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/undefine...')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/undefined
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 04:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:36:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 04:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/23123
+---
+2014/09/24 05:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/475415
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 05:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/475413
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 05:38:19 [error] [php] Missing argument 1 for CDbCommand::limit(), called in Z:\home\a5\www\protected\modules\client\views\default\index.php on line 25 and defined (Z:\home\a5\www\framework\db\CDbCommand.php:1119)
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#1 Z:\home\a5\www\framework\web\CController.php(869): DefaultController->renderFile()
+#2 Z:\home\a5\www\framework\web\CController.php(782): DefaultController->renderPartial()
+#3 Z:\home\a5\www\protected\modules\client\controllers\DefaultController.php(14): DefaultController->render()
+#4 Z:\home\a5\www\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#5 Z:\home\a5\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 Z:\home\a5\www\framework\web\CController.php(286): DefaultController->runAction()
+#7 Z:\home\a5\www\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#8 Z:\home\a5\www\framework\web\CWebApplication.php(282): DefaultController->run()
+#9 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\a5\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/client
+in Z:\home\a5\www\protected\modules\client\views\default\index.php (25)
+in Z:\home\a5\www\protected\modules\client\controllers\DefaultController.php (14)
+in Z:\home\a5\www\index.php (13)

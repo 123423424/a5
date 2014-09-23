@@ -1,3 +1,4 @@
+
 <!-- Modal  Login-->
         <div class="modal fade" id="repeatMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -47,10 +48,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7 col-md-8 title-lead">
-				<div id="tyt"></div>
+				
 
 				<h1>Сделать заказ</h1>
 				<p>Два простых шага</p>
+                <?php 
+     
+?>
 			</div>
 
 			<div class="col-sm-5 col-md-4 title-lead">
@@ -66,8 +70,14 @@
 </div>
 
 <!-- Тело страницы -->
+
+
 <div class="bs-docs-featurette my-not-padding">
 <div class="container">
+
+<p id="tyt" class="form-mess bg-danger padding10"> нет ответа... Сообщите об ошибке на почту 380-00-63@mail.ru</p>
+
+
 	<div class="row">
 		<div  class="col-xs-2 "></div>
 		<div  class="col-xs-8 ">
