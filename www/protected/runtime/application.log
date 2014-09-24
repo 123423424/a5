@@ -3752,3 +3752,20 @@ REQUEST_URI=/client
 in Z:\home\a5\www\protected\modules\client\views\default\index.php (25)
 in Z:\home\a5\www\protected\modules\client\controllers\DefaultController.php (14)
 in Z:\home\a5\www\index.php (13)
+2014/09/24 06:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client/view".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client/view')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client/3
+HTTP_REFERER=http://a5/client
+---
+2014/09/24 07:37:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "client1".' in Z:\home\a5\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\a5\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client1')
+#1 Z:\home\a5\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\a5\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/client1
+---
